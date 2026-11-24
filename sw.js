@@ -1,5 +1,5 @@
 /* Inspection. Built by Sheryar Khan. Network first; after 3 seconds or when offline, the cached copy, only if it is this exact page. */
-const C="lontl-inspection-0.5.0",H="c7fb41ec733b91b3da3da1984d1404a14705a7bbe2bea8604ac0e3cbfa05c74e";
+const C="lontl-inspection-0.5.1",H="9bbc8027b0b7271372b5f02d67af942533bc662b9d832866e1d8f0e631bfec9a";
 const hex=b=>Array.from(new Uint8Array(b),x=>(x<16?"0":"")+x.toString(16)).join("");
 const ok=b=>crypto.subtle.digest("SHA-256",b).then(d=>hex(d)===H);
 const page=b=>new Response(b,{headers:{"content-type":"text/html; charset=utf-8"}});
